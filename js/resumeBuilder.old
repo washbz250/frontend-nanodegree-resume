@@ -33,3 +33,21 @@ education["schoolCity"] = "Coopersville";
 
 $("#main").append(work.position);
 $("#main").append(education.lastSchool);
+
+
+var zach = {};
+zach.job = "student";
+var learnCourse = function() {
+	// Learn the course
+	console.log("Learned a course");
+}
+var courses = 0;
+while(zach.job === "student"){
+	learnCourse();
+	courses = courses + 1;
+	if(courses === 10) {
+		zach.job = "programmer";
+	}
+}
+
+console.log(zach.job);
